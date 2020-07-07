@@ -10,11 +10,11 @@ use App\Http\Controllers\Controller;
 
 class EntriesController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $entries = Entries::where('user_id', auth()->user()->id)->orderBy('entry_time', 'desc')->simplePaginate(100);
 
-        // some fun code to split our data out by day
+        // some fun code to split our data out by day and calculate daily balances
         $days = [];
         $this_day = $day_balance = null;
 
@@ -37,7 +37,7 @@ class EntriesController extends Controller
         $days[$this_day]['title'] = $this_day;
         $days[$this_day]['balance'] = number_format($day_balance, 2);
 
-        $days['morePages'] = $entries->hasMorePages() ? 1 : 0;
+        $days['morePages'] = $entries->hasMorePages();
 
         return $days;
     }
