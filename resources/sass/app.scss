@@ -1,8 +1,20 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@font-face {
+    font-family: SFProRegular;
+    src: url("/fonts/SF-Pro-Rounded-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SFProRegular;
+    font-weight: bold;
+    src: url("/fonts/SF-Pro-Rounded-Semibold.otf") format("opentype");
+}
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// App-specific CSS
+@import 'custom';

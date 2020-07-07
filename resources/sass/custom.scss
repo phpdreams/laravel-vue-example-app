@@ -1,0 +1,147 @@
+img.logo {
+    margin: -5px .5em 2px 0;
+}
+
+img.user-alert {
+    margin-right: .75em;
+}
+
+img.user-avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: .5em;
+}
+
+section.app-info-bar {
+    padding: 2rem 0;
+    background: $dkblue;
+    color: white;
+
+    span.heading {
+        font-size: 1.5em;
+    }
+
+    button.info-btn {
+        margin-left: 1em;
+    }
+
+    .balance-wrapper {
+        text-align: right;
+        .title {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            color: #94a0b8;
+        }
+        .balance {
+            font-size: 2em;
+            line-height: 1em;
+            color: $green;
+        }
+    }
+}
+
+.entries {
+    .day-wrapper {
+        margin: 2rem 0 1rem;
+        color: #aaa;
+        .day-title {
+            text-transform: uppercase;
+        }
+        .day-balance {
+            font-size: 1.5em;
+            color: $green;
+            .negative {
+                color: #aaa;
+            }
+        }
+    }
+    .card {
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+        &:hover .hidden {
+            visibility: visible;
+            opacity: 1;
+        }
+        margin-bottom: 1em;
+        padding: 1em;
+        border-radius: .5em;
+        .entry-label {
+            font-size: 1.3em;
+        }
+        .entry-time {
+            font-size: .9em;
+            color: #aaa;
+        }
+        .entry-amount {
+            text-align: right;
+            font-size: 1.5em;
+            color: $green;
+            min-width: 4.5em;
+        }
+        .entry-actions {
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            span {
+                text-transform: uppercase;
+                font-size: .9em;
+                color: $blue;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .edit-form {
+        .input-wrapper {
+            margin: 1em .5em 1em 0;
+            padding: 1em 0 0.75em;
+            border-top: 1px solid #dee2e6;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        .modal-footer {
+            padding-bottom: 0;
+        }
+    }
+}
+
+span.negative {
+    color: initial;
+}
+span.balance-negative {
+    color: $red;
+}
+span.cents {
+    font-size: 0.7em;
+}
+
+.input-wrapper {
+    padding: .25em;
+    label {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+}
+input.form-control {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    .fa {
+        margin-right: 0.4em;
+        font-size: 1.2em;
+    }
+}
+.btn-cancel {
+    color: desaturate(lighten($blue, 10%), 50%);
+    background-color: desaturate(lighten($blue, 40%), 75%);
+}
