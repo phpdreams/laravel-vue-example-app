@@ -38344,23 +38344,27 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "info-actions" }, [
-      _c("span", { staticClass: "heading" }, [_vm._v("Your Balance")]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary info-btn",
-          attrs: { "data-toggle": "modal", "data-target": "#add_entry" }
-        },
-        [_c("i", { staticClass: "fa fa-plus" }), _vm._v(" Add Entry")]
-      ),
-      _vm._v(" "),
-      _c("button", { staticClass: "btn btn-primary info-btn" }, [
-        _c("i", { staticClass: "fa fa-upload" }),
-        _vm._v(" Import CSV")
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "info-actions d-flex align-items-center" },
+      [
+        _c("span", { staticClass: "heading" }, [_vm._v("Your Balance")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary info-btn",
+            attrs: { "data-toggle": "modal", "data-target": "#add_entry" }
+          },
+          [_c("i", { staticClass: "fa fa-plus" }), _vm._v(" Add Entry")]
+        ),
+        _vm._v(" "),
+        _c("button", { staticClass: "btn btn-primary info-btn" }, [
+          _c("i", { staticClass: "fa fa-upload" }),
+          _vm._v(" Import CSV")
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

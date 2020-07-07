@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 row align-items-center justify-content-between">
-                    <div class="info-actions">
+                    <div class="info-actions d-flex align-items-center">
                         <span class="heading">Your Balance</span>
                         <button class="btn btn-primary info-btn" data-toggle="modal" data-target="#add_entry"><i class="fa fa-plus"></i> Add Entry</button>
                         <button class="btn btn-primary info-btn"><i class="fa fa-upload"></i> Import CSV</button>
